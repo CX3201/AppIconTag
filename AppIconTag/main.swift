@@ -184,6 +184,9 @@ func draw(icon:NSImage, info:AppIconInfo) -> NSImage? {
         let style = NSMutableParagraphStyle()
         style.alignment = .center
         let str = NSAttributedString(string: info.text, attributes: [.font:NSFont(name:"Helvetica", size:CGFloat(info.fontSize))!, .foregroundColor:info.color, .paragraphStyle:style])
+        let realRect = str.boundingRect(with: textRect.size, options: .usesFontLeading)
+        let textHeight = realRect.size.height
+        textRect.origin.y -= (textRect.size.height - textHeight) / 2
         str.draw(in: textRect)
     }
     

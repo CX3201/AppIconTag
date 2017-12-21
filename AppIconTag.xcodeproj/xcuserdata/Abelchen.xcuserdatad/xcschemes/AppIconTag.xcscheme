@@ -65,7 +65,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "test.png -f 28 -s 180 -c 0x000000ff -bc 0xeeefefff -t Debug&#x65e0;&#x652f;&#x4ed8; -g Top -h 40"
+            argument = "test.png -f 28 -s 180 -c 0x000000ff -bc 0x00000000 -t Debug&#x65e0;&#x652f;&#x4ed8; -g Top -h 40"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
