@@ -172,7 +172,7 @@ func draw(icon:NSImage, info:AppIconInfo) -> NSImage? {
     icon.draw(in: NSRect(origin: CGPoint.zero, size: image.size))
     
     var textRect = NSRect(x: 0, y: 0, width: info.imageSize, height: info.height)
-    if info.gravity == .Bottom {
+    if info.gravity == .Top {
         textRect.origin.y = CGFloat(info.imageSize - info.height)
     }
     
