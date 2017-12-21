@@ -35,8 +35,8 @@ struct AppIconInfo {
 }
 
 func hexStringToInt(_ hex: String) -> Int? {
-    var str = hex
-    if str.hasPrefix("0x") {
+    var str = hex.uppercased()
+    if str.hasPrefix("0X") {
         str = String(str.suffix(str.count - 2))
     }
     var value = 0;
