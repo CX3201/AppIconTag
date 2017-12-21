@@ -196,12 +196,12 @@ func draw(icon:NSImage, info:AppIconInfo) -> NSImage? {
 
 guard var info = parseArguments() else {
     print("AppIconTag: 解析参数错误")
-    exit(-1)
+    exit(0)
 }
 
 guard let image = NSImage(contentsOfFile: info.path) else {
     print("AppIconTag: 图标打开失败")
-    exit(-1)
+    exit(0)
 }
 
 if info.imageSize == 0 {
